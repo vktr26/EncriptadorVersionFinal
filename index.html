@@ -17,12 +17,12 @@
             id="texto" 
             cols="30" 
             rows="10" 
-            placeholder="Ingresa el texto aqui"
+            placeholder="Ingresa tu mensaje aqui"
         ></textarea>
         
 
         <div class="terminos">
-            <p>Solo letras minúsculas y sin acéntos.</p>
+            <p>Recuerda ingresar solo letras minúsculas y sin acéntos.</p>
         </div>
       
       <div class="botones">
@@ -39,15 +39,22 @@
             onclick="desencriptar()">
             Desencriptar
             </button>
+
+            <button 
+            class="boton-copiar" 
+            type="button" 
+            onclick="copiar()">
+            Copiar
+            </button>
         </div>
         </div>
 
         <div class="encriptado">
-            <img src="" alt="" id="foto-personas">
+            <img src="img/buscando.png" alt="" id="buscando">
             <div class="mensaje-encriptado" id="mensaje-encriptado">
-                <h2 id="titulo.mensaje">Ninguna palabra encontrada</h2>
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
                 <p id="parrafo">Ingresa la palabra que deseas encriptar o desencriptar</p>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
             </div>
         </div>
     </div>
