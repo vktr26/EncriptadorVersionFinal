@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
 
 </head>
+
+<div class="logo-container">
+    <img src="img/Header.png" alt="Logo" class="logo">
+</div>
+
     <body>
         <div class="container">
+            <div class="container"></div>
         <div class="encriptar">
         <textarea 
             name="texto" 
@@ -18,11 +25,10 @@
             cols="30" 
             rows="10" 
             placeholder="Ingresa tu mensaje aqui"
-        ></textarea>
-        
+        ></textarea>-
 
         <div class="terminos">
-            <p>Recuerda ingresar solo letras minúsculas y sin acéntos.</p>
+            <p>Solo letras minúsculas y sin acentos.</p>
         </div>
       
       <div class="botones">
@@ -40,12 +46,6 @@
             Desencriptar
             </button>
 
-            <button 
-            class="boton-copiar" 
-            type="button" 
-            onclick="copiar()">
-            Copiar
-            </button>
         </div>
         </div>
 
@@ -53,11 +53,28 @@
             <img src="img/buscando.png" alt="" id="buscando">
             <div class="mensaje-encriptado" id="mensaje-encriptado">
                 <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
-                <p id="parrafo">Ingresa la palabra que deseas encriptar o desencriptar</p>
-                <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea name="text" id="textarea" cols="30" rows="10" class="textarea" ></textarea>
+
+            <button 
+            class="boton-copiar" 
+            type="button" 
+            onclick="copiar()">
+            Copiar
+            </button>
+
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Developed By Víctor Aguilar</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 
 </body>
 <script src="index.js"></script>

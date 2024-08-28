@@ -1,13 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: #f3f5fc;
+    background: #fcf3fb
+
 }
 
 .texto  {
@@ -17,12 +19,12 @@
     left: 12%;
     top: 15%;
     border: none;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    background-color: #f3f5fc;
+    background-color: #fcf3fb;
 }
 
 .texto::placeholder{
@@ -48,7 +50,7 @@
 }
 
 .terminos p{
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -76,14 +78,15 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
+    width: 20%;
     background-color: #0a3871;
     border-radius: 24px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 19px;
     text-align: center;
     color: #fff;
+    margin-right: 5px; 
 }
 
 .boton-desencriptar {
@@ -94,16 +97,17 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
+    width: 20%;
     background: #d8dfe8;
     border: 1px solid #0a3871;
     border-radius: 24px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
     text-align: center;
     color: #0a3871;
+    margin-right: 5px; 
 }
 
 .boton-copiar {
@@ -111,10 +115,10 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
+    width: 20%;
     background-color: #0a3871;
     border-radius: 24px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 19px;
     text-align: center;
@@ -125,21 +129,26 @@
 .boton-desencriptar:hover,
 .boton-copiar:hover {
     margin: 0.3%;
-    width: 24.5%;
+    width: 20%;
     padding: 1.8%;
 }
 
 .encriptado {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     width: 30%;
-    height: 90%;
+    height: 100%;
+    max-height: 90%;
     left: 60%;
     top: 5%;
-    background: #fff;
+    background: #fcf3fb
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+    padding: 20px;
+    box-sizing: border-box; 
 }
 
 .mensaje-encriptado {
@@ -148,16 +157,16 @@
     align-items: center;
     justify-content: center;
     padding: 1%;
-    gap: 16px;
+    gap: 10px;
     position: absolute;
     width: 100%;
-    top: 65%;
+    top: 35%;
     text-align: center;
 }
 
 .mensaje-encriptado h2 {
     width: 60%;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -168,7 +177,7 @@
 
 .mensaje-encriptado p {
     width: 80%;
-    font-family: "inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -177,13 +186,70 @@
     color: #495057;
 }
 
+
 .encriptado #buscando {
     position: absolute;
     width: 40%;
-    height: 40%;
-    top: 15%;
+    height: 30%;
+    top: 5%;
 }
 
+.encriptado #textarea {
+    width: 100%; 
+    height: auto; 
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; 
+    line-height: 150%;
+    background-color: #fff;
+    border: none; 
+    outline: none; 
+    padding: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    resize: none; 
+    margin-bottom: 20px; 
+}
+
+.footer { 
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px; 
+
+    }
+
+    .logo-container {
+        position: absolute;
+        margin: 0;
+        border: none;
+        top: 10px;
+        left: 10px;
+        z-index: 1000; 
+    }
+    
+    .logo {
+        width: 100px; 
+        height: auto;
+        
+
+    }
 
 /*responsive design */
 @media (max-width:57.5em) {
@@ -232,7 +298,7 @@
 
     .encriptado {
         width: 80%;
-        height: 15%;
+        height: auto;
         left: 10%;
         top: 80%;
     }
