@@ -165,7 +165,8 @@
 }
 
 .mensaje-encriptado h2 {
-    width: 60%;
+    width: 85%;
+    height: 15%;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -196,12 +197,12 @@
 
 .encriptado #textarea {
     width: 100%; 
-    height: auto; 
+    height: 15%; 
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px; 
-    line-height: 150%;
+    line-height: 75%;
     background-color: #fff;
     border: none; 
     outline: none; 
